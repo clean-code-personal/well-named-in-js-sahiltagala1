@@ -1,6 +1,8 @@
 const ColorPair_file = require('./ColorPair')
+const colorCodingPrint_file = require('./colorCodingPrint') 
 const getColorFromPairNumber_file = require('./getColorFromPairNumber')
 const getPairNumberFromColor_file = require('./getPairNumberFromColor')
+
 var MajorColorNames = ["WHITE", "RED", "BLACK", "YELLOW", "VIOLET"];
 var MinorColorNames = ["BLUE", "ORANGE", "GREEN", "BROWN", "SLATE"];
 // module.export = {MajorColorNames};
@@ -40,3 +42,5 @@ function test() {
   console.assert(pairNumber == 6);
 }
 test();
+console.log('Numbers : ColorName')
+colorCodingPrint_file.colorCodingPrint();
