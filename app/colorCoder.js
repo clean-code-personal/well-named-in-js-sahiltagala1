@@ -3,6 +3,8 @@ const getColorFromPairNumber_file = require('./getColorFromPairNumber')
 const getPairNumberFromColor_file = require('./getPairNumberFromColor')
 var MajorColorNames = ["WHITE", "RED", "BLACK", "YELLOW", "VIOLET"];
 var MinorColorNames = ["BLUE", "ORANGE", "GREEN", "BROWN", "SLATE"];
+// module.export = {MajorColorNames};
+// module.export = {MinorColorNames};
 
 function test() {
   pairNumber = 4;
