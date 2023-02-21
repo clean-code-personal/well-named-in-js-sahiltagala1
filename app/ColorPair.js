@@ -9,6 +9,6 @@ ColorPair.prototype.toString = function () {
 module.exports = new export_file_ColorPair();
 function export_file_ColorPair() {
   return {
-    ColorPair: ColorPair,
+    ColorPair: ColorPair
   };
 }
