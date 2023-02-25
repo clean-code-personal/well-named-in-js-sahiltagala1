@@ -1,9 +1,9 @@
-const { MajorColorNames, MinorColorNames } = require("./colors.js");
+const { MajorColorNames, MinorColorNames, majorLen, minorLen } = require("./colors.js");
 const ColorPair_file = require("./ColorPair.js");
 
 function colorCodingPrint() {
-  let minorSize = MajorColorNames.length;
-  let majorSize = MinorColorNames.length;
+  let minorSize = minorLen;
+  let majorSize = majorLen;
   let n = minorSize * majorSize;
   for (let i = 1; i <= n; i++) {
     let zeroBasedPairNumber = i - 1;
