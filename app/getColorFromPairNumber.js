@@ -1,11 +1,9 @@
-const ColorPair_file = require("./ColorPair");
-// import MajorColorNames from './colorCoders';
-// import MinorColorNames from './colorCoders';
-var MajorColorNames = ["WHITE", "RED", "BLACK", "YELLOW", "VIOLET"];
-var MinorColorNames = ["BLUE", "ORANGE", "GREEN", "BROWN", "SLATE"];
+const { MajorColorNames, MinorColorNames, majorLen, minorLen } = require("./colors.js");
+const ColorPair_file = require("./ColorPair.js");
+
 function getColorFromPairNumber(pairNumber) {
-  let minorSize = MajorColorNames.length;
-  let majorSize = MinorColorNames.length;
+  let minorSize = minorLen;
+  let majorSize = majorLen;
 
   if (pairNumber < 1 || pairNumber > minorSize * majorSize) {
     throw `Argument PairNumber:${pairNumber} is outside the allowed range`;
@@ -22,6 +20,6 @@ function getColorFromPairNumber(pairNumber) {
 module.exports = new export_file_getColorFromPairNumber();
 function export_file_getColorFromPairNumber() {
   return {
-    getColorFromPairNumber:getColorFromPairNumber
+    getColorFromPairNumber: getColorFromPairNumber,
   };
-};
+}
