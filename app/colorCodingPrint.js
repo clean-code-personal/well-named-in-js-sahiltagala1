@@ -1,6 +1,6 @@
-const ColorPair_file = require("./ColorPair");
-var MajorColorNames = ["WHITE", "RED", "BLACK", "YELLOW", "VIOLET"];
-var MinorColorNames = ["BLUE", "ORANGE", "GREEN", "BROWN", "SLATE"];
+const { MajorColorNames, MinorColorNames } = require("./colors.js");
+const ColorPair_file = require("./ColorPair.js");
+
 function colorCodingPrint() {
   let minorSize = MajorColorNames.length;
   let majorSize = MinorColorNames.length;
